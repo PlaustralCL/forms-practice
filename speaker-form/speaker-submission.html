@@ -7,8 +7,8 @@
   <title>Speaker Submission</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  <header class="speaker-form-header">
+<!-- From Interneting is Hard, https://www.internetingishard.com/html-and-css/forms/ -->
+<header class="speaker-form-header">
     <h1>Speaker Submission</h1>
     <p><em>Want to speak at our fake conference? Fill out this form.</em></p>
   </header>
@@ -21,7 +21,7 @@
     <div class="form-row">
       <label for="email">Email</label>
       <input id="email"
-              name="emal"
+              name="email"
               type="email"
               placeholder="joe@example.com">
     </div>
@@ -51,7 +51,25 @@
         <option value="l">Large</option>
       </select>
     </div>
+
+    <div class="form-row">
+      <label for="abstract">Abstract</label>
+      <textarea name="abstract" id="abstract"></textarea>
+      <div class="instructions">Describe your talk in 500 words or less</div>
+    </div>
+
+    <div class="form-row">
+      <label for="available" class="checkbox-label">
+        <input type="checkbox"
+               name="available"
+               id="available"
+               value="is-available">
+        <span>I'm actaully available the date of the talk</span>
+      </label>
+    </div>
+
+    <div class="form-row">
+      <button>Submit</button>
+    </div>
   </form>
-</nav>
-</body>
 </html>
